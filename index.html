@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Відділ кадрів</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Відділ кадрів</h1>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Ім'я користувача" required>
+    <input type="password" id="password" placeholder="Пароль" required>
+    <button type="submit">Увійти</button>
+  </form>
+  <form id="registerForm">
+    <h2>Реєстрація</h2>
+    <input type="text" id="newUsername" placeholder="Ім'я користувача" required>
+    <input type="password" id="newPassword" placeholder="Пароль" required>
+    <select id="role">
+      <option value="admin">Адміністратор</option>
+      <option value="user">Користувач</option>
+    </select>
+    <button type="submit">Зареєструватися</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

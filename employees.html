@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список працівників</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="toggleTablesBtn">Перемкнути до викладачів</button>
+    <h1 id="list" >Список працівників</h1>
+    <form>
+      <label id="filterPositionText" for="filterPosition">Фільтр по посаді:</label>
+      <select id="filterPosition1">
+        <option value="">Усі посади</option>
+      </select>
+    </form>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Ім'я</th>
+          <th>Посада</th>
+          <th>Зарплата</th>
+          <th>Дії</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Дані будуть відображені тут -->
+      </tbody>
+    </table>
+    <button id="addEmployeeBtn">Додати працівника</button>
+
+<!-- Таблиця викладачів -->
+<h1 id="list1" style="display: none;">Список викладачів</h1>
+<form id="filterForm" style="display: none;">
+    <label for="filterPosition">Фільтр по посаді:</label>
+    <select id="filterPosition">
+      <option value="">Усі посади</option>
+    </select>
+  </form>
+  
+<table id="teacherTable" style="display: none;">
+    <thead>
+      <tr>
+        <th>ПІБ</th>
+        <th>Посада</th>
+        <th>Кількість годин</th>
+        <th>Заробітна плата</th>
+        <th>Дії</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Дані будуть відображені тут -->
+    </tbody>
+  </table>
+  <button id="addTeacherBtn" style="display: none;">Додати викладача</button>
+
+
+</div>
+  </div>
+
+  <script src="employees.js"></script>
+</body>
+</html>
